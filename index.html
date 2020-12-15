@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Etusivu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--Here is the navigation bar-->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Etusivu</a>
+    <a href="info.html">About</a>
+      <a href="https://github.com/jakamaton?tab=repositories" target="_blank" >Github</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div class="menu"></div>
+      <div class="menu"></div>
+    <div class="menu"></div>
+  </a>
+</div>
+
+
+
+<!--The main image-->
+<div class="container">
+    <h1>Hello World</h1>
+</div>
+
+
+<!--Here should be some information about skills-->
+<div class="slideshow-container">
+
+<div class="mySlides">
+<p class="skills">C#, C/C++, Java ja Javascript</p>
+</div>
+
+<div class="mySlides">
+<p class="skills">Relaatiotietokannat ja SQL</p>
+</div>
+
+<div class="mySlides">
+<p class="skills">Pilvipalvelut</p>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)"><<</a>
+<a class="next" onclick="plusSlides(1)">>></a>
+
+</div>
+
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+  <div class="laatikko">
+      <p class="teksti">Yksinkertaista</p >
+      </div>
+
+
+  <div class="laatikko1">
+      <p class="teksti">Toimivaa</p>
+      </div>
+
+
+  <footer class="footer">
+  <p>Niko Mast<br>
+  <a href="https://www.linkedin.com/in/niko-mast-3a8a86201/">Ota yhteyttä!</a></p>
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+  x.className = "topnav";
+}}
+</script>
+</div>
+</div>
+</body>
+</html>

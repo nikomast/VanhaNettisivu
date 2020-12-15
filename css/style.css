@@ -1,0 +1,373 @@
+* {box-sizing: border-box}
+
+iframe{
+overflow:hidden;
+height:100vh;
+width:100%;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: black;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.skills{
+  color: Turquoise;
+  font-size: 25px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+body {
+  padding:0px;
+  margin: 0;
+  font-family: FreeMono;
+  background-color: black;
+}
+
+h1{
+  color: white;
+  font-family: Noto Sans;
+  line-height: 0.99;
+}
+
+/* Tässä on välilehtien navigointiin tarkoitettu palkki*/
+.topnav {
+  overflow: hidden;
+  background-color: Black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: FreeMono;
+  letter-spacing: -1px
+}
+
+.topnav a:hover {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: darkgrey;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  background-color: black;
+  padding: 17px 18px;
+}
+
+.menu {
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin: 5px 0px;
+}
+
+/* Tässä on etusivun kuva ja siihen liittyvät asiat*/
+.container {
+  padding: 200px;
+  text-align: center;
+  background-image: url(computer-1873831.png);
+  color: white;
+  background-size: cover;
+}
+
+.center {
+  letter-spacing: -3px;
+  line-height: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: FreeMono;
+  font-size: 80px;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #444;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 10px;
+  width: 33.333%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#News {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+
+.sisältö{
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+
+/* Etusivun laatikko*/
+.teksti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: FreeMono;
+  font-size: 35px;
+  color: white;
+}
+
+.laatikko {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  padding: 5px;
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 500px;
+  background-image: url(black-932213_1280.jpg);
+  background-size: cover;
+}
+
+.laatikko1 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  padding: 5px;
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 500px;
+  background-image: url(background-2462426_1920.jpg);
+  background-size: cover;
+}
+
+}
+.kuva {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+   padding: 1px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Responsiivisuus asetukset*/
+@media screen and (max-width: 1024px) {
+  .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+  .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: FreeMono;
+  font-size: 65px;
+  }
+
+  .teksti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: FreeMono;
+    font-size: 25px;
+  }
+
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.prev, .next {
+  font-size: 40px;
+}
+
+.skills{
+  text-align: center;
+  color: Turquoise;
+  font-size: 20px;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 5px;
+    background: black;
+}
+
+.prev, .next {
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+
+.laatikko {border-width: 5px;}
+.laatikko1 {border-width: 5px;}
+.laatikko2 {border-width: 5px;}
+
+
+
+.skills{
+    color: Turquoise;
+    text-align: center;
+    font-size: 15px;
+  }
+
+.container {border-width: 5px;}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: FreeMono;
+  font-size: 30px;
+  }
+
+.teksti {
+position: absolute;
+top: 50%;
+left: 50%;
+font-family: FreeMono;
+font-size: 15px;
+}
+}
